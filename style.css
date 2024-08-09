@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: #F5DEB3;
+    padding: 0 auto;
+    font-family: "Roboto Slab", serif;
+}
+
+header {
+    padding-left: 200px;
+    height: 75px;
+    background-color: #EBA43F;
+}
+
+img.logo {
+    padding-top: 10px;
+    margin: 0;
+    width: 67px;
+    height: 56px;
+}
+
+main {
+    margin: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerPrincipal h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.tituloContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.box {
+    background-color: #EBA43F;
+    width: 967px;
+    height: 635px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+form {
+    border-radius: 30px;
+    background-color: #F5DEB3;
+    width: 247px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.boxForm {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 23px;
+}
+
+.boxForm label {
+    max-width: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.boxForm input {
+    height: 29px;
+    margin-bottom: 20px;
+    width: 145px;
+    height: 15px;
+}
+
+.boxForm button {
+    align-self: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #EBA43F;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.boxForm button:hover{
+    background-color: white;
+    color:green;
+}
+
+
+.containerResultado {
+    display: none;
+    background-color: #F5DEB3;
+    width: 576px;
+    height: 294px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.containerConteudo {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+.containerItemQuantidade {
+    display: flex;
+    justify-content: space-between;;
+    line-height: 8pt;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.tituloResultado {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.items {
+    margin-left: 100px;
+}
+
+.quantidade {
+    margin-right: 100px;
+}
+
+footer{
+    margin-top: 150px;
+    height: 143px;
+    background-color: #EBA43F;
+}
+
+footer{
+    display: flex;
+    padding-left: 200px;
+}
+
+footer img{
+    padding: 25px;
+    width: 41px;
+    height: 41px;
+}
+
+footer p{
+    padding-top: 18px;
+}
