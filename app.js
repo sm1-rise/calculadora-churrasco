@@ -1,21 +1,36 @@
 document.getElementById('formCalculadora').addEventListener('submit', function(event) {
-    const inputs = document.querySelectorAll('input[type="number"]');
     let valid = true;
 
+    const inputs = document.querySelectorAll('input[type="number"]');
+    
+    const userInputs = []; 
+
     inputs.forEach(input => {
-        if (input.value < 0) {
+       if(input.value == '0'){
+           userInputs.push(input.value);
+           }
+       
+       if (input.value < 0) {
             valid = false;
             alert('Os valores não podem ser negativos.');
             input.value = '';
-        }
-    });
+       }
 
+       });
+
+    if(userInputs.length == 3){
+        valid = false;
+        alert('Digite um valor maior que 0.');
+    }
+        
     if (!valid) {
         event.preventDefault();
     }
 });
 
+
 document.getElementById('formCalculadora').addEventListener('submit', function (event){
+   
     event.preventDefault();
 
     const qHomem = document.getElementById('qHomem').value;
@@ -28,7 +43,8 @@ document.getElementById('formCalculadora').addEventListener('submit', function (
     const refrigerante= totalRefrigerante(qHomem, qMulher, qCrianca);
     const cerveja = totalCerveja(qHomem,qMulher);
 
-    document.getElementById('quantidade').innerHTML = `
+    
+        document.getElementById('quantidade').innerHTML = `
                 <h3>Quantidade</h3>
                 <p>${carneBovina}KG</p>
                 <p>${frango}KG</p>
@@ -38,6 +54,8 @@ document.getElementById('formCalculadora').addEventListener('submit', function (
             `;
 
     document.getElementById('containerResultado').style.display = 'block';
+   
+        
 });
 
 function totalCarneBovina(totalHomem, totalMulher, totalCrianca){

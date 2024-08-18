@@ -5,8 +5,9 @@ body {
     font-family: "Roboto Slab", serif;
 }
 
+
 header {
-    padding-left: 200px;
+    padding-left: 15%;
     height: 75px;
     background-color: #EBA43F;
 }
@@ -24,22 +25,17 @@ main {
     justify-content: center;
 }
 
-.containerPrincipal h1 {
-    display: flex;
-    justify-content: center;
-}
-
 .tituloContainer {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 15px;
     padding-top: 25px;
 }
 
 .box {
     background-color: #EBA43F;
-    width: 967px;
-    height: 635px;
+    width: 100%;
+    height: 100%;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 30px;
@@ -49,7 +45,8 @@ form {
     border-radius: 30px;
     background-color: #F5DEB3;
     width: 247px;
-    padding: 10px;
+    padding: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
@@ -106,7 +103,7 @@ form {
     display: flex;
     justify-content: flex-start;
     padding-top: 25px;
-    padding-left: 40px;
+    padding-left: 5%;
 }
 
 .containerItemQuantidade {
@@ -152,3 +149,132 @@ footer img{
 footer p{
     padding-top: 18px;
 }
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column; /* Alinha os elementos em uma coluna */
+    }
+
+    .containerPrincipal{
+        display: flex;
+    }
+
+    .tituloContainer {
+        font-size: 12px;
+    }
+
+    .box {
+        width: 400px;
+        display: flex;
+        margin-top: 20px; /* Adiciona um espaço entre o formulário e o box */
+        flex-direction: column;      /* Faz o box ocupar toda a largura disponível */
+    }
+
+    form {
+            border-radius: 27px;
+            background-color: #F5DEB3;
+            width: 150px;
+            padding: 14px;
+            padding-right: 14px;
+            box-sizing: border-box;
+        }
+        
+        .boxForm {
+            display: flex;
+            flex-direction: column;
+            padding-left: 16px;
+            padding-top: 18px;
+        }
+        
+        .boxForm label {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4.5px;
+        }
+        
+        .boxForm input {
+            height: 26px;
+            margin-bottom: 18px;
+            width: 75px;
+            height: 12px;
+        }
+        
+        .boxForm button {
+            align-self: center;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #EBA43F;
+            border-radius: 27px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+        
+        .boxForm button:hover{
+            background-color: white;
+            color:green;
+        }
+        
+        
+        .containerResultado {
+            display: none;
+            background-color: #F5DEB3;
+            width: 200px;
+            height: 294px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+        
+        .containerConteudo {
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 25px;
+            padding-left: 5%;
+        }
+        
+        .containerItemQuantidade {
+            display: flex;
+            justify-content: space-between;;
+            line-height: 8pt;
+            font-size: 10px;
+            font-weight: 800;
+            
+        }
+        
+        .tituloResultado {
+            margin-left: 10px;
+            font-weight: 500;
+            font-size: 8px;
+        }
+        
+        .items {
+            margin-left: 0px;
+        }
+        
+        .quantidade {
+            margin-right: 0px;
+        }
+        
+        footer{
+            margin-top: 20px;
+            height: 100px;
+            background-color: #EBA43F;
+        }
+        
+        footer{
+            display: flex;
+            padding-left: 0px;
+        }
+        
+        footer img{
+            padding: 25px;
+            width: 41px;
+            height: 41px;
+        }
+        
+        footer p{
+            padding-top: 18px;
+        }
+    }
