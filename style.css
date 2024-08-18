@@ -152,11 +152,12 @@ footer p{
 
 @media (max-width: 600px) {
     main {
-        flex-direction: column; /* Alinha os elementos em uma coluna */
+        flex-direction: column;
     }
 
-    .containerPrincipal{
-        display: flex;
+    img.logo {
+        width: 57px;
+        height: 47px;
     }
 
     .tituloContainer {
@@ -166,22 +167,17 @@ footer p{
     .box {
         width: 400px;
         display: flex;
-        margin-top: 20px; /* Adiciona um espaço entre o formulário e o box */
-        flex-direction: column;      /* Faz o box ocupar toda a largura disponível */
+        margin-top: 20px; 
+        flex-direction: column;      
     }
 
     form {
-            border-radius: 27px;
-            background-color: #F5DEB3;
             width: 150px;
             padding: 14px;
             padding-right: 14px;
-            box-sizing: border-box;
         }
         
         .boxForm {
-            display: flex;
-            flex-direction: column;
             padding-left: 16px;
             padding-top: 18px;
         }
@@ -200,52 +196,29 @@ footer p{
         }
         
         .boxForm button {
-            align-self: center;
             padding: 3px 7px;
             font-size: 12px;
-            font-weight: bold;
-            background-color: #EBA43F;
-            border-radius: 27px;
-            cursor: pointer;
-            margin-right: 20px;
+            margin-right: 17px;
         }
-        
-        .boxForm button:hover{
-            background-color: white;
-            color:green;
-        }
-        
         
         .containerResultado {
-            display: none;
-            background-color: #F5DEB3;
             width: 200px;
-            height: 294px;
+            height: 250px;
             padding: 10px;
-            box-sizing: border-box;
-            border-radius: 30px;
             margin-left: 30px;
         }
         
         .containerConteudo {
-            display: flex;
-            justify-content: flex-start;
             padding-top: 25px;
             padding-left: 5%;
         }
         
         .containerItemQuantidade {
-            display: flex;
-            justify-content: space-between;;
-            line-height: 8pt;
-            font-size: 10px;
-            font-weight: 800;
-            
+            font-size: 10px;            
         }
         
         .tituloResultado {
             margin-left: 10px;
-            font-weight: 500;
             font-size: 8px;
         }
         
@@ -259,22 +232,118 @@ footer p{
         
         footer{
             margin-top: 20px;
-            height: 100px;
-            background-color: #EBA43F;
+            height: 50px;
+            padding-left: 30px;
+            height: 87px;
         }
         
-        footer{
-            display: flex;
-            padding-left: 0px;
-        }
         
         footer img{
             padding: 25px;
-            width: 41px;
-            height: 41px;
+            width: 30px;
+            height: 30px;
         }
         
         footer p{
             padding-top: 18px;
+            font-size: 14px;
         }
     }
+
+@media(max-width: 400px){
+    img.logo {
+        margin-top: 8px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .tituloContainer {
+        font-size: 10px;
+    }
+
+    .box {
+        width: 300px;     
+    }
+
+    form {
+            width: 100px;
+            padding: 7px;
+        }
+        
+        .boxForm {
+            padding-left: 16px;
+            padding-top: 18px;
+        }
+        
+        .boxForm label {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 2.5px;
+        }
+        
+        .boxForm input {
+            height: 26px;
+            margin-bottom: 18px;
+            width: 45px;
+            height: 10px;
+        }
+        
+        .boxForm button {
+            padding: 2px 5px;
+            font-size: 10px;
+        }
+        
+        .containerResultado {
+            width: 130px;
+            height: 250px;
+            padding: 10px;
+        }
+        
+        .containerConteudo {
+            padding-top: 0px;
+            padding-left: 5%;
+        }
+        
+        .containerItemQuantidade {
+            font-size: 10px;            
+        }
+        
+        .tituloResultado {
+            margin-left: 4px;
+            font-size: 7px;
+        }
+        
+        .items  {
+            margin-left: 0px;
+            font-size: 10px;
+        }
+        
+        .quantidade h3  {
+            font-size: 10px;
+        }
+        
+        .quantidade p{
+            padding-top: 4px;
+            padding-left: 6px;
+            line-height: 10px;
+        }
+        
+        footer{
+            margin-top: 20px;
+            height: 50px;
+            padding-left: 30px;
+            height: 72px;
+        }
+        
+        
+        footer img{
+            padding: 25px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        footer p{
+            padding-top: 15px;
+            font-size: 12px;
+        }
+}
